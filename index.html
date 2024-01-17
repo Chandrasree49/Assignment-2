@@ -9,27 +9,43 @@
     <link rel="stylesheet" href="styles/all.min.css" />
   </head>
   <body>
-    <header>
+    <header class="bodyclass">
       <div class="navbarsection">
         <div class="logosection">
           <img src="Images/Group 40071 (2).png" />
-          <h2>M<span>oo</span>nshine <span> Tr</span>a<span>vel</span></h2>
+          <h2>M<span>oo</span>n <span> Tr</span>a<span>vel</span></h2>
         </div>
         <div>
-          <div class="menu-toggle"></div>
-          <nav class="nav-menu">
-            <a href="#"><span>Home</span></a>
-            <a href="#">Packages</a>
-            <a href="#">Testimonial</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+          <nav>
+            <ul class="desktop-menu">
+              <li class="desktop-menu-item">
+                <a href="#"><span>Home</span></a>
+              </li>
+              <li class="desktop-menu-item"><a href="#">Packages</a></li>
+              <li class="desktop-menu-item"><a href="#">Testimonial</a></li>
+              <li class="desktop-menu-item"><a href="#">Blog</a></li>
+              <li class="desktop-menu-item"><a href="#">Contact</a></li>
+              <li class="mobile-menu-toggle">
+                <a><i class="fa-solid fa-bars"> </i></a>
+                <ul
+                  class="dropdown"
+                  style="margin-left: -50px; margin-top: 8px"
+                >
+                  <li>Home</li>
+                  <li>Packages</li>
+                  <li>Testimonial</li>
+                  <li>Blog</li>
+                  <li>Contact</li>
+                </ul>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main>
+    <main class="bodyclass">
       <div class="firstbanner">
-        <h1 style="font-size: 64px; font-weight: 800">Explore Your Travel</h1>
+        <h1 class="firstbanner_header">Explore Your Travel</h1>
         <p>
           Let's Travel with Moonshine Travel.This site is a book of information
           about lot of place and designed for the use of visitors or tourists
@@ -41,22 +57,9 @@
             placeholder="where go"
             id=""
             name=""
-            style="
-              border-radius: 8px;
-              width: 174px;
-              height: 52px;
-              padding-left: 10px;
-            "
+            class="txtboxstyle_txt"
           />
-          <select
-            name="month"
-            style="
-              border-radius: 8px;
-              height: 52px;
-              width: 174px;
-              padding-left: 10px;
-            "
-          >
+          <select name="month" class="txtboxstyle">
             <option>when</option>
             <option>january</option>
             <option>february</option>
@@ -65,31 +68,14 @@
             <option>may</option>
             <option>june</option>
           </select>
-          <select
-            name="type"
-            style="
-              border-radius: 8px;
-              width: 174px;
-              height: 52px;
-              padding-left: 10px;
-            "
-          >
+          <select name="type" class="txtboxstyle">
             <option value="select type">select type</option>
             <option>Family Tour</option>
             <option>Couple Tour</option>
             <option>Single Tour</option>
             <option>Group Tour</option>
           </select>
-          <button
-            style="
-              border-radius: 8px;
-              background-color: #ff5400;
-              width: 174px;
-              height: 52px;
-              color: #fff;
-              border: none;
-            "
-          >
+          <button class="btnstyle">
             <i
               class="fa-solid fa-magnifying-glass"
               style="padding-right: 10px"
@@ -101,7 +87,7 @@
       <section>
         <div class="populartour">
           <div>
-            <h1 style="font-size: 50px; font-weight: 800">Our Popular Tours</h1>
+            <h1 class="populartour_header">Our Popular Tours</h1>
             <p>
               There are so many contry's and so many tourist spot.We help people
               to travel populer tourist spot.Some popular tour are given below:
@@ -124,10 +110,10 @@
               </li>
             </ul>
             <p>
-              People also love to visit
-              paris,maldives,kashmir,bali,rome,sydney,new york,london and so
-              on.We try to suggest popular tourist spot so that people can visit
-              popular places in short time.
+              People also love to visit paris,maldives, kashmir, bali, rome,
+              sydney, new york, london and so on.We try to suggest popular
+              tourist spot so that people can visit popular places in short
+              time.
             </p>
             <button
               style="
@@ -144,64 +130,64 @@
             </button>
           </div>
           <div>
-            <img
-              src="Images/Rectangle 4.png"
-              style="width: 540px; height: 550px; margin-top: 40px"
-            />
+            <img src="Images/Rectangle 4.png" class="popular_image" />
           </div>
         </div>
       </section>
 
       <section>
         <div class="destination">
-          <h1 style="font-size: 50px; font-weight: 800">
-            Choose Your Destination
-          </h1>
-          <p style="font-size: 16px; font-weight: 400">
+          <h1 class="destination_header">Choose Your Destination</h1>
+          <p class="destination_para">
             Here are some popular tourist spot photos.You can choose a beautiful
-            place to visit on your vacation time.
+            place to visit on your vacation time.So,don't be late choose a place
+            and contact with us.
           </p>
-          <p style="font-size: 16px; font-weight: 400">
-            So,don't be late choose a place and contact with us.
-          </p>
+          <!-- <p class="destination_para">
+            
+          </p> -->
         </div>
         <div class="firstrow">
-          <div class="maldivs">
+          <div class="maldivs destination_image_text">
             <h2 style="padding-top: 70px">Maldives</h2>
           </div>
-          <div class="indo"><h2 style="padding-top: 70px">Indonesia</h2></div>
+          <div class="indo destination_image_text">
+            <h2 style="padding-top: 70px">Indonesia</h2>
+          </div>
         </div>
         <div class="secondrow">
-          <div class="srilanka">
+          <div class="srilanka destination_image_text">
             <h2 style="padding-top: 70px">Srilanka</h2>
           </div>
-          <div class="North">
+          <div class="North destination_image_text">
             <h2 style="padding-top: 70px">North America</h2>
           </div>
-          <div class="kashmir"><h2 style="padding-top: 70px">Kashmir</h2></div>
+          <div class="kashmir destination_image_text">
+            <h2 style="padding-top: 70px">Kashmir</h2>
+          </div>
         </div>
         <div class="thirdrow">
-          <div class="bangla">
+          <div class="bangla destination_image_text">
             <h2 style="padding-top: 70px">Bangladesh</h2>
           </div>
-          <div class="band"><h2 style="padding-top: 70px">Bandarban</h2></div>
+          <div class="band destination_image_text">
+            <h2 style="padding-top: 70px">Bandarban</h2>
+          </div>
         </div>
       </section>
       <section>
         <div class="destination">
-          <h1 style="font-size: 50px; font-weight: 800">Why Choose Us</h1>
-          <p style="font-size: 16px; font-weight: 400">
+          <h1 class="destination_header">Why Choose Us</h1>
+          <p class="destination_para">
             We try to understand your preferences, interests, and budget,
             ensuring every aspect of your trip aligns with your unique
-            requirements.
-          </p>
-          <p style="font-size: 16px; font-weight: 400">
-            We offer offer tailored expertise, leveraging their extensive
-            knowledge and experience to curate personalised itineraries.
+            requirements.We offer offer tailored expertise, leveraging their
+            extensive knowledge and experience to curate personalised
+            itineraries.
           </p>
         </div>
         <div class="choose">
-          <div class="hotel" style="padding-left: 40px">
+          <div class="hotel">
             <img src="Images/hotel.png" style="width: 64px; height: 64px" />
             <h2>Handpicked Hotels</h2>
             <p>
@@ -212,7 +198,7 @@
               travel experience.
             </p>
           </div>
-          <div class="service" style="padding-left: 40px">
+          <div class="service">
             <img src="Images/map.jpg" style="width: 64px; height: 64px" />
             <h2>World Class Service</h2>
             <p>
@@ -225,7 +211,7 @@
         </div>
         <div class="best">
           <img
-            src="Images/tag1.jpg"
+            src="Images/taaag.png"
             style="width: 64px; height: 64px; padding-top: 40px"
           />
           <h2>Best Price Guarantee</h2>
@@ -254,39 +240,16 @@
                 placeholder="Enter your name"
                 id=""
                 name=""
-                style="
-                  border-radius: 8px;
-                  width: 393px;
-                  height: 52px;
-                  border: none;
-                  background-color: rgb(225, 219, 219);
-                "
+                class="inputsection"
               /><br /><br />
               <input
                 type="text"
                 placeholder="Enter your email"
                 id=""
                 name=""
-                style="
-                  border-radius: 8px;
-                  width: 393px;
-                  height: 52px;
-                  border: none;
-                  background-color: rgb(225, 219, 219);
-                "
+                class="inputsection"
               /><br /><br />
-              <button
-                style="
-                  border-radius: 8px;
-                  background-color: #ff5400;
-                  width: 393px;
-                  height: 52px;
-                  color: #fff;
-                  border: none;
-                "
-              >
-                Subscribe
-              </button>
+              <button class="inputbtn">Subscribe</button>
             </form>
           </div>
           <div class="travel">
@@ -326,9 +289,9 @@
             <p style="font-size: 28px; font-weight: 800">Popular Tour</p>
           </div>
           <div>
-            <img src="Images/com.png" style="width: 100px; height: 100px" />
+            <img src="Images/comments.png" style="width: 100px; height: 100px" />
             <h3 style="font-size: 28px; font-weight: 400">9000</h3>
-            <p style="font-size: 28px; font-weight: 800">Treviews</p>
+            <p style="font-size: 28px; font-weight: 800">Reviews</p>
           </div>
         </div>
       </div>
@@ -340,7 +303,7 @@
           style="width: 48px; height: 56px; padding-right: 15px"
         />
         <h2 style="font-size: 36px">
-          M<span>oo</span>nshine <span> Tr</span>a<span>vel</span>
+          M<span>oo</span>n<span> Tr</span>a<span>vel</span>
         </h2>
       </div>
       <p>
@@ -354,9 +317,9 @@
         <i class="fa-brands fa-instagram" style="padding-right: 20px"></i>
         <i class="fa-brands fa-github" style="padding-right: 20px"></i>
       </div>
-      <br /><br />
+
       <hr />
-      <br /><br />
+
       <div>
         <p>2024,All Rights Reserved</p>
       </div>

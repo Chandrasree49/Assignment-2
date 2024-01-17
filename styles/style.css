@@ -1,6 +1,37 @@
-body {
-  margin: 30px 170px 0px 170px;
+.bodyclass {
+  width: 90%;
+  margin: 0 auto;
 }
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav > ul {
+  display: flex;
+  padding-top: 12px;
+}
+
+nav li {
+  list-style: none;
+}
+nav li .dropdown {
+  display: none;
+  position: absolute;
+  margin-bottom: 10px;
+}
+nav li:hover .dropdown {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  background: white;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
 .navbarsection {
   display: flex;
   justify-content: space-between;
@@ -42,13 +73,19 @@ p {
       rgba(19, 19, 24, 0) 80%
     ),
     url(../Images/head_back.png);
-  width: 1170px;
+  width: 100%;
   height: 450px;
+  background-size: cover;
   color: #fff;
   text-align: center;
   padding-top: 50px;
   border-radius: 16px;
   font-weight: 800px;
+}
+
+.firstbanner_header {
+  font-size: 64px;
+  font-weight: 800;
 }
 .bannerlist {
   border-radius: 8px;
@@ -59,10 +96,41 @@ p {
   gap: 24px;
   text-align: center;
 }
+
+.txtboxstyle {
+  border-radius: 8px;
+  width: 174px;
+  height: 52px;
+  padding-left: 10px;
+}
+.txtboxstyle_txt {
+  border-radius: 8px;
+  width: 174px;
+  height: 52px;
+  padding-left: 10px;
+}
+
+.btnstyle {
+  border-radius: 8px;
+  background-color: #ff5400;
+  width: 174px;
+  height: 52px;
+  color: #fff;
+  border: none;
+}
 .populartour {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+}
+.populartour_header {
+  font-size: 50px;
+  font-weight: 800;
+}
+.popular_image {
+  width: 540px;
+  height: 550px;
+  margin-top: 40px;
 }
 li {
   padding-bottom: 30px;
@@ -72,27 +140,40 @@ li {
   text-align: center;
   margin-bottom: 50px;
 }
+.destination_header {
+  font-size: 50px;
+  font-weight: 800;
+}
+.destination_para {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .firstrow {
   display: flex;
   gap: 20px;
 }
-.maldivs {
-  background-image: url(../Images/Rectangle\ 5.png);
-  width: 573px;
+.destination_image_text {
+  width: 100%;
   height: 300px;
   text-align: center;
   color: #fff;
   font-size: 28px;
+  border-radius: 16px;
   font-weight: 800;
 }
+
+.maldivs {
+  background: url(../Images/Rectangle\ 5.png) center/cover no-repeat;
+}
 .indo {
-  background-image: url(../Images/Rectangle\ 8.png);
-  width: 573px;
-  height: 300px;
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+  background: url(../Images/Rectangle\ 8.png) center/cover no-repeat;
 }
 .secondrow {
   display: flex;
@@ -100,31 +181,13 @@ li {
   margin-top: 20px;
 }
 .srilanka {
-  background-image: url(../Images/Rectangle\ 6.png);
-  width: 371px;
-  height: 286px;
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+  background: url(../Images/Rectangle\ 6.png) center/cover no-repeat;
 }
 .North {
-  background-image: url(../Images/Rectangle\ 7.png);
-  width: 474px;
-  height: 286px;
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+  background: url(../Images/Rectangle\ 7.png) center/cover no-repeat;
 }
 .kashmir {
-  background-image: url(../Images/Rectangle\ 9.png);
-  width: 274px;
-  height: 286px;
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+  background: url(../Images/Rectangle\ 9.png) center/cover no-repeat;
 }
 .thirdrow {
   display: flex;
@@ -132,26 +195,16 @@ li {
   margin-top: 20px;
 }
 .bangla {
-  background-image: url(../Images/Rectangle\ 11.png);
-  width: 473px;
-  height: 300px;
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+  background: url(../Images/Rectangle\ 11.png) center/cover no-repeat;
 }
 .band {
-  background-image: url(../Images/Rectangle\ 10.png);
-  width: 673px;
-  height: 300px;
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+  background: url(../Images/Rectangle\ 10.png) center/cover no-repeat;
 }
 .newsletter {
   display: flex;
   margin-top: 80px;
+  gap: 20px;
+  justify-content: space-evenly;
 }
 
 .letter {
@@ -160,44 +213,59 @@ li {
   border: 2px solid #ff5400;
   border-radius: 16px;
   padding: 20px;
-  margin-right: 20px;
+}
+.inputbtn {
+  border-radius: 8px;
+  background-color: #ff5400;
+  width: 393px;
+  height: 52px;
+  color: #fff;
+  border: none;
 }
 .travel {
-  background-image: url(../Images/Rectangle_8_1.png);
-  width: 672px;
+  background: url(../Images/Rectangle_8_1.png) center/cover no-repeat;
+  border-radius: 16px;
+  width: 100%;
   height: 422px;
-}
-.saveup {
   position: relative;
-  left: 330px;
-  top: 245px;
+}
+
+.saveup {
+  position: absolute;
+  bottom: 33px;
+  right: 15px;
   text-align: center;
   color: #fff;
   background-color: #ff5400;
   border-radius: 16px;
-  width: 324px;
+  width: 230px;
   height: 120px;
   transform: rotate(-19.628deg);
   padding: 5px;
 }
+
 .choose {
   display: flex;
   gap: 20px;
+  padding: 10px;
+  justify-content: center;
 }
 .best {
-  margin: 30px 100px 30px 300px;
+  margin-left: 25%;
   padding-left: 40px;
 }
 
 .hotel {
   width: 573px;
   height: 284px;
+  padding-left: 15px;
   border-radius: 16px;
   border: 1px solid rgba(251, 181, 99, 0.2);
   background: rgba(251, 181, 99, 0.05);
 }
 .service {
   width: 573px;
+  padding-left: 15px;
   height: 284px;
   border-radius: 16px;
   border: 1px solid rgba(41, 206, 246, 0.2);
@@ -210,6 +278,14 @@ li {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
 }
+.inputsection {
+  border-radius: 8px;
+  width: 100%;
+  height: 52px;
+  border: none;
+  background-color: rgb(225, 219, 219);
+}
+
 .achieve {
   display: flex;
   justify-content: space-evenly;
@@ -218,62 +294,229 @@ li {
 }
 footer {
   background: rgba(19, 19, 24, 0.05);
-  width: 1000px;
-  height: 302px;
+  width: 100%;
+  height: 340px;
   text-align: center;
-  padding: 100px;
 }
 .icons {
   padding-top: 30px;
 }
 
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  position: relative;
-}
-
-.menu-toggle::before,
-.menu-toggle::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background-color: #505053;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  transition: 0.4s;
-}
-
-.menu-toggle::after {
-  top: 100%;
-}
-
-.nav-menu {
-  display: flex;
-}
-
-@media screen and(max-width:600px) {
-  body {
-    margin-top: 30px;
+@media (min-width: 992px) {
+  .best {
+    margin-left: 25%;
+    padding-left: 40px;
   }
-  .logosection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .desktop-menu-item {
+    display: none;
   }
-  .logosecton img {
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu-toggle .dropdown {
+    position: fixed;
+  }
+
+  .firstbanner {
+    background-image: linear-gradient(
+        180deg,
+        rgba(19, 19, 24, 0.8) 0%,
+        rgba(19, 19, 24, 0) 80%
+      ),
+      url(../Images/head_back.png);
+    background-size: cover; /* Ensure the background image covers the container */
     width: 100%;
+    height: 550px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 16px;
+    font-weight: 400;
+    margin-left: 1px;
+    margin-right: 20px;
   }
-  .logosection h2 {
-    font-size: 16px;
+
+  .bannerlist {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    text-align: center;
   }
-}
-@media screen and(min-width:992px) {
+
+  .txtboxstyle {
+    border-radius: 8px;
+    width: 100%;
+    height: 52px;
+    padding-left: 10px;
+  }
+  .txtboxstyle_txt {
+    border-radius: 8px;
+    width: 95%;
+    height: 52px;
+    padding-left: 10px;
+  }
+
+  .btnstyle {
+    border-radius: 8px;
+    background-color: #ff5400;
+    width: 100%;
+    height: 52px;
+    color: #fff;
+    border: none;
+  }
+
+  .firstbanner_header {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .populartour {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .populartour_header {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .popular_image {
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+  }
+
+  .destination_header {
+    color: #131318;
+
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .destination_para {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .firstrow {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .thirdrow {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .secondrow {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .choose {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .best {
+    margin: 0;
+  }
+  .hotel {
+    width: 100%;
+    padding: 7px;
+    height: 284px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background: rgba(251, 181, 99, 0.05);
+  }
+  .service {
+    width: 100%;
+    height: 284px;
+    padding: 7px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    background: rgba(41, 206, 246, 0.05);
+  }
+  .best {
+    width: 100%;
+    height: 284px;
+    padding: 7px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    background: rgba(233, 68, 68, 0.05);
+  }
+
+  .newsletter {
+    display: flex;
+
+    width: 100%;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .letter {
+    width: 88%;
+  }
+  .inputsection {
+    border-radius: 8px;
+    width: 100%;
+    height: 52px;
+    border: none;
+    background-color: rgb(225, 219, 219);
+  }
+  .inputbtn {
+    border-radius: 8px;
+    background-color: #ff5400;
+    width: 100%;
+    height: 52px;
+    color: #fff;
+    border: none;
+  }
+
+  .achieve {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+  }
+  footer {
+    background: rgba(19, 19, 24, 0.05);
+    width: 100%;
+    height: 340px;
+    text-align: center;
+  }
 }
